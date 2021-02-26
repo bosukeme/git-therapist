@@ -1,0 +1,7 @@
+requests
+bs4
+lxml
+flask
+flask_restful
+uwsgi
+gunicorn==20.0.4

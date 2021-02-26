@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  website:
+    build: .
+    command: >
+      gunicorn -c "python:config.gunicorn" --reload "therapist.app:app"
+    volumes:
+      - '.:/therapist'
+    ports:
+      - '5000:5000'
